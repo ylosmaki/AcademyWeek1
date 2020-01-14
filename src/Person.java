@@ -1,47 +1,38 @@
 public class Person {
-    String address;
-    String city;
-    String phoneNumber;
+
+    private String name;
+    private int age;
 
     public Person() {
+
     }
 
-    public Person(String address, String city, String phoneNumber) {
-        this.address = address;
-        this.city = city;
-        this.phoneNumber = phoneNumber;
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
-    public String getAddress() {
-        return address;
+    public String getName() {
+        return this.name;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public int getAge() {
+        return this.age;
     }
 
-    public String getCity() {
-        return city;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+    public void setAge(int age) {
+        this.age = age;
     }
 
     @Override
     public String toString() {
         return "Person{" +
-                "address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                "name='" + name + '\'' +
+                ", age=" + age +
                 '}';
     }
 }
